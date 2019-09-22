@@ -1,0 +1,8 @@
+--require ts-node/register
+--require tsconfig-paths/register
+--require source-map-support/register
+--require reflect-metadata
+--require @typetron/framework/Support
+--watch-extensions ts
+--recursive
+test/**/*.ts

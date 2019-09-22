@@ -1,0 +1,33 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es2017",
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"sourceMap": true,
+		"strict": true,
+		"strictPropertyInitialization": false,
+		"outDir": "dist",
+		"baseUrl": ".",
+		"moduleResolution": "node",
+		"lib": [
+			"esnext"
+		],
+		"paths": {
+			"App/*": [
+				"*"
+			],
+			"@Typetron/*": [
+				"../node_modules/@typetron/framework/*"
+			]
+		}
+	},
+	"include": [
+		"**/*.ts"
+	],
+	"exclude": [
+		"test",
+		"node_modules"
+	]
+}
+
