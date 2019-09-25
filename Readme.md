@@ -9,7 +9,7 @@ Most of the core packages it uses were built from scratch in order to preserve t
 
 ## Getting started
 ```shell script
-git clone https://github.com/typetron/app my-awesome-project
+git clone https://github.com/typetron/typetron my-awesome-project
 cd my-awesome-project
 npm install
 npm start
