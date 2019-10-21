@@ -1,6 +1,4 @@
 /* tslint:disable:no-default-export */
-import { DatabaseConfig } from '@typetron/framework/Database';
+import { DatabaseConfig } from '@Typetron/Database';
 
-export default new DatabaseConfig({
-    database: undefined
-});
+export default new DatabaseConfig({});

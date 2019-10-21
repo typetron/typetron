@@ -1,18 +1,12 @@
-import { Inject } from '@typetron/framework/Container';
-import { AppConfig } from '@typetron/framework/Framework';
-import { Controller, Get } from '@typetron/framework/Router';
+import { Controller, Get } from '@Typetron/Router';
+import { Filesystem } from '@Typetron/Filesystem';
+import { Request } from '@Typetron/Http';
 
 @Controller()
 export class HomeController {
 
-    @Inject()
-    appConfig: AppConfig;
-
     @Get()
-    welcome() {
-        return `
-            <h1 style="text-align: center">Welcome to your awesome app built with Typetron.</h1>
-            <h3 style="text-align: center">Check the <a href="https://github.com/typetron/typetron">Typetron Docs</a> on how to get started.</h3>
-        `;
+    welcome(storage: Filesystem, request: Request) {
+        return storage.read('public/index.html');
     }
 }

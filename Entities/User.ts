@@ -1,10 +1,6 @@
-import { EntityBase } from '@typetron/framework/Database';
-import { Column, Entity, ID } from '@typetron/framework/Database/Decorators';
+import { Column, Entity, ID } from '@Typetron/Database';
 
-@Entity<User>({
-    table: 'users'
-})
-export class User extends EntityBase {
+export class User extends Entity {
 
     @Column()
     id: ID;

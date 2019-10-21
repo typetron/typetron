@@ -8,6 +8,6 @@ class HomeControllerTest extends TestCase {
     @test
     async showsWelcomeMessage() {
         const response = await this.get('welcome');
-        expect(response.content).to.contain('Welcome to your awesome app built with Typetron.');
+        expect(response.content).to.contain('Build something awesome');
     }
 }

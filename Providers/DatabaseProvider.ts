@@ -1,7 +1,7 @@
-import { Inject } from '@typetron/framework/Container';
-import { DatabaseConfig, Query } from '@typetron/framework/Database';
-import { Connection } from '@typetron/framework/Database/Connection';
-import { Provider } from '@typetron/framework/Framework';
+import { Inject } from '@Typetron/Container';
+import { DatabaseConfig, Query } from '@Typetron/Database';
+import { Connection } from '@Typetron/Database/Connection';
+import { Provider } from '@Typetron/Framework';
 
 export class DatabaseProvider extends Provider {
 

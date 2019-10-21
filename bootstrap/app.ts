@@ -1,3 +1,3 @@
-import { Application } from '@typetron/framework/Framework';
+import { Application } from '@Typetron/Framework';
 
 export const app = new Application(__dirname + '/..');

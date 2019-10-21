@@ -1,13 +1,17 @@
 /* tslint:disable:no-default-export */
-import { AppConfig } from '@typetron/framework/Framework';
+import { AppConfig, CorsMiddleware } from '@Typetron/Framework';
 import { DatabaseProvider } from 'App/Providers/DatabaseProvider';
 import { RoutingProvider } from 'App/Providers/RoutingProvider';
+import { AppProvider } from 'App/Providers/AppProvider';
 
 export default new AppConfig({
     port: 8000,
-
-    middleware: [],
+    environment: 'development',
+    middleware: [
+        CorsMiddleware
+    ],
     providers: [
+        AppProvider,
         RoutingProvider,
         DatabaseProvider,
     ]

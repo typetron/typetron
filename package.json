@@ -12,20 +12,15 @@
 		"test": "mocha"
 	},
 	"dependencies": {
-		"sqlite3": "^4.0.6",
-		"reflect-metadata": "^0.1.13",
-		"@typetron/framework": "^0.0.4"
+		"@typetron/framework": "^0.0.5",
+		"reflect-metadata": "^0.1.13"
 	},
 	"devDependencies": {
 		"@types/chai": "^4.1.7",
 		"@types/mocha": "^5.2.6",
 		"@types/node": "^10.14.3",
-		"@types/socket.io": "^2.1.2",
-		"@types/sqlite3": "^3.1.5",
 		"chai": "^4.2.0",
 		"mocha": "^6.0.2",
-		"mocha-typescript": "^1.1.17",
-		"nodemon": "^1.18.10",
 		"nyc": "^12.0.2",
 		"source-map-support": "^0.5.11",
 		"ts-node": "^8.0.3",
@@ -33,6 +28,6 @@
 		"tsconfig-paths": "^3.8.0",
 		"tslint": "~5.11.0",
 		"typescript": "^3.5.1",
-		"@testdeck/mocha": "latest"
+		"@testdeck/mocha": "0.0.6"
 	}
 }

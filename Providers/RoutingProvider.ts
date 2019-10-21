@@ -1,16 +1,19 @@
-import { AppConfig, Provider } from '@typetron/framework/Framework';
-import { Router } from '@typetron/framework/Router';
+import { AppConfig, Provider } from '@Typetron/Framework';
+import { Router } from '@Typetron/Router';
+import { Inject } from '@Typetron/Container';
 
 export class RoutingProvider extends Provider {
-    namespace = 'Controllers';
+    directory = 'Controllers';
+
+    @Inject()
+    appConfig: AppConfig;
+
+    @Inject()
+    router: Router;
 
     register() {
-        const router = this.app.get(Router);
+        this.router.middleware = this.appConfig.middleware || [];
 
-        const appConfig = this.app.config.get(AppConfig);
-        router.middlewares = appConfig.middleware || [];
-
-        const path = this.app.directory + '/' + this.namespace;
-        router.loadControllers(path);
+        this.router.loadControllers(this.app.directory + '/' + this.directory);
     }
 }

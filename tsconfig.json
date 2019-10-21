@@ -18,7 +18,7 @@
 				"*"
 			],
 			"@Typetron/*": [
-				"../node_modules/@typetron/framework/*"
+				"node_modules/@typetron/framework/*"
 			]
 		}
 	},

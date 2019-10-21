@@ -1,6 +1,6 @@
 # Typetron
 > **Note:** This project is a prototype in heavy development and not ready for production. 
-> Feel free to play with it 😄
+> But feel free to play with it 😄.
 
 **[Typetron](https://github.com/typetron/typetron)** is a **modern web framework** built for Node.js, written in **Typescript**, that
 allows you to build fully featured web applications. 
@@ -18,7 +18,7 @@ npm start
 Check [http://localhost:8000](http://localhost:8000)
 
 ### Prerequisites
-- Just [Node.js](https://nodejs.org)
+- [Node.js](https://nodejs.org)
 
 > **Note:** If you want to use a database, create a `database.sqlite` file 
 > (the framework supports only SQLite, but more adapters will be added) in the root of your project,
@@ -26,7 +26,9 @@ Check [http://localhost:8000](http://localhost:8000)
 > (in the future these table will be created automatically) 
 ## Docs
 
-#### Controllers
+Check the [official website](https://typetron.org) for more details.
+
+##### Controllers
 Controllers allow you to define routes for your app. A method inside a controller can be a route if it is 
 annotated with one of the available routing decorators `@Get()`, `@Post()`, `@Put()`, `@Delete()` etc.
 Below is an example of a controller: 
@@ -106,12 +108,8 @@ import { Controller} from '@Typetron/Router';
 })
 class UserController {}
 ``` 
-##### Method middleware
-...
-##### Controller middleware
-...
 
-_[more to come]_
+_[check the [website](https://typetron.org) for more info]_
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
