@@ -5,10 +5,11 @@
 	"functions": 80,
 	"branches": 80,
 	"include": [
-		"dist/**/*.js"
+		"**/*.ts"
 	],
 	"exclude": [
-		"dist/test/**/*.js"
+		"node_modules",
+		"test"
 	],
 	"reporter": [
 		"lcov",
