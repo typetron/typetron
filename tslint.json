@@ -13,6 +13,8 @@
 		},
 		"eofline": true,
 		"forin": true,
+		"ban-types": true,
+		"only-arrow-functions": true,
 		"import-blacklist": [
 			true,
 			"rxjs/Rx"

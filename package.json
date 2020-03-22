@@ -12,10 +12,10 @@
 		"test": "mocha"
 	},
 	"dependencies": {
-		"@typetron/framework": "^0.0.7",
-		"typescript": "^3.5.1",
+		"@typetron/framework": "^0.0.8",
+		"reflect-metadata": "^0.1.13",
 		"ts-node": "^8.0.3",
-		"reflect-metadata": "^0.1.13"
+		"typescript": "^3.8.3"
 	},
 	"devDependencies": {
 		"@types/chai": "^4.1.7",
