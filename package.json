@@ -8,11 +8,11 @@
 		"name": "Ionel Lupu"
 	},
 	"scripts": {
-		"start": "ts-node-dev -r tsconfig-paths/register --respawn bootstrap/index.ts",
+		"start": "ts-node-dev -r tsconfig-paths/register --respawn index.ts",
 		"test": "mocha"
 	},
 	"dependencies": {
-		"@typetron/framework": "^0.0.9",
+		"@typetron/framework": "0.0.10",
 		"reflect-metadata": "^0.1.13",
 		"ts-node": "^8.0.3",
 		"typescript": "^3.8.3"

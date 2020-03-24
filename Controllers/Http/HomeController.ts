@@ -1,11 +1,11 @@
 import { Controller, Get } from '@Typetron/Router';
-import { Filesystem } from '@Typetron/Filesystem';
+import { Storage } from '@Typetron/Storage';
 
 @Controller()
 export class HomeController {
 
     @Get()
-    welcome(storage: Filesystem) {
+    welcome(storage: Storage) {
         return storage.read('public/index.html');
     }
 }

@@ -7,7 +7,7 @@ export class AppErrorHandler extends ErrorHandler {
     @Inject()
     appConfig: AppConfig;
 
-    handle(error: Error, request: Request) {
+    handle(error: Error, request?: Request) {
         if (this.appConfig.environment === 'production') {
             if (error instanceof HttpError) {
                 return new Response(error.status, error.content);
