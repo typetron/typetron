@@ -2,7 +2,7 @@
 	"name": "@typetron/typetron",
 	"description": "Modern Node.js framework for backend apps written in Typescript",
 	"license": "MIT",
-	"version": "0.0.2",
+	"version": "0.0.1",
 	"author": {
 		"email": "ionel@typetron.org",
 		"name": "Ionel Lupu"
@@ -12,7 +12,7 @@
 		"test": "mocha"
 	},
 	"dependencies": {
-		"@typetron/framework": "0.0.11",
+		"@typetron/framework": "^0.0.14",
 		"reflect-metadata": "^0.1.13",
 		"ts-node": "^8.0.3",
 		"typescript": "^3.8.3"
@@ -23,7 +23,7 @@
 		"@types/node": "^10.14.3",
 		"chai": "^4.2.0",
 		"mocha": "^6.0.2",
-		"nyc": "^12.0.2",
+		"nyc": "^15.0.1",
 		"source-map-support": "^0.5.11",
 		"ts-node-dev": "^1.0.0-pre.39",
 		"tsconfig-paths": "^3.8.0",

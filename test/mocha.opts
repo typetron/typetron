@@ -4,5 +4,6 @@
 --require reflect-metadata
 --require @typetron/framework/Support
 --watch-extensions ts
+--timeout 10000
 --recursive
 test/**/*.ts

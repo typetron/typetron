@@ -11,7 +11,7 @@
 		"deprecation": {
 			"severity": "warn"
 		},
-		"eofline": true,
+		"eofline": false,
 		"forin": true,
 		"ban-types": true,
 		"only-arrow-functions": true,

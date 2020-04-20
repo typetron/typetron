@@ -3,11 +3,17 @@ import { AppConfig, Application } from '@Typetron/Framework';
 import * as path from 'path';
 
 export class TestCase extends BaseTestCase {
+
+    static app: Application;
+
     async bootstrapApp() {
+        if (TestCase.app) {
+            this.app = TestCase.app;
+            return;
+        }
         const app = await Application.create(path.join(__dirname, '..'));
-        app.startServer();
         const config = app.get(AppConfig);
         console.log(`Started server at: http://localhost:${config.port}`);
-        this.app = app;
+        TestCase.app = this.app = app;
     }
 }
