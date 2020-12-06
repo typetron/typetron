@@ -1,10 +1,10 @@
-import { Column, Meta } from '@Typetron/Database';
-import { User as Authenticable } from '@Typetron/Framework/Auth';
+import { Column, Options } from '@Typetron/Database'
+import { User as Authenticable } from '@Typetron/Framework/Auth'
 
-@Meta({
+@Options({
     table: 'users'
 })
 export class User extends Authenticable {
     @Column()
-    name: string;
+    name: string
 }

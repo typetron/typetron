@@ -1,0 +1,13 @@
+{
+	"extension": [
+		"ts"
+	],
+	"require": [
+		"ts-node/register",
+		"tsconfig-paths/register",
+		"source-map-support/register",
+		"reflect-metadata",
+		"@typetron/framework/Support"
+	],
+	"spec": "test/**/*Test.ts"
+}

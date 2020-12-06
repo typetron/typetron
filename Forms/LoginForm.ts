@@ -1,5 +1,5 @@
-import { Field, Form, Rules } from '@Typetron/Forms';
-import { Email, Required } from '@Typetron/Validation';
+import { Field, Form, Rules } from '@Typetron/Forms'
+import { Email, Required } from '@Typetron/Validation'
 
 export class LoginForm extends Form {
 
@@ -8,11 +8,11 @@ export class LoginForm extends Form {
         Required,
         Email
     )
-    email: string;
+    email: string
 
     @Field()
     @Rules(
         Required,
     )
-    password: string;
+    password: string
 }

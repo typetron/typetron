@@ -13,6 +13,9 @@
 		"lib": [
 			"esnext"
 		],
+		"types": [
+			"reflect-metadata"
+		],
 		"paths": {
 			"App/*": [
 				"*"

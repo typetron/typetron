@@ -1,5 +1,5 @@
-import { Field, Form, Rules } from '@Typetron/Forms';
-import { Email, MinLength, Required } from '@Typetron/Validation';
+import { Field, Form, Rules } from '@Typetron/Forms'
+import { Email, MinLength, Required } from '@Typetron/Validation'
 
 export class RegisterForm extends Form {
 
@@ -8,18 +8,18 @@ export class RegisterForm extends Form {
         Required,
         Email,
     )
-    email: string;
+    email: string
 
     @Field()
     @Rules(
         Required,
         MinLength(6),
     )
-    password: string;
+    password: string
 
     @Field()
     @Rules(
         Required
     )
-    passwordConfirmation: string;
+    passwordConfirmation: string
 }

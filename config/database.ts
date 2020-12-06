@@ -1,6 +1,6 @@
 /* tslint:disable:no-default-export */
-import { DatabaseConfig } from '@Typetron/Framework';
+import { DatabaseConfig } from '@Typetron/Framework'
 
 export default new DatabaseConfig({
     database: 'database.sqlite'
-});
+})

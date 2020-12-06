@@ -1,8 +1,8 @@
 /* tslint:disable:no-default-export */
-import { AppConfig } from '@Typetron/Framework';
-import { DatabaseProvider } from 'App/Providers/DatabaseProvider';
-import { RoutingProvider } from 'App/Providers/RoutingProvider';
-import { AppProvider } from 'App/Providers/AppProvider';
+import { AppConfig } from '@Typetron/Framework'
+import { DatabaseProvider } from 'App/Providers/DatabaseProvider'
+import { RoutingProvider } from 'App/Providers/RoutingProvider'
+import { AppProvider } from 'App/Providers/AppProvider'
 
 export default new AppConfig({
     port: 8000,
@@ -18,4 +18,4 @@ export default new AppConfig({
     // staticAssets: {
     //     '*': ['public']
     // }
-});
+})
