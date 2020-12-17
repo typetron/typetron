@@ -1,5 +1,5 @@
 /* tslint:disable:no-default-export */
-import { AppConfig } from '@Typetron/Framework'
+import { AppConfig, DatabaseProvider } from '@Typetron/Framework'
 import { RoutingProvider } from 'App/Providers/RoutingProvider'
 import { AppProvider } from 'App/Providers/AppProvider'
 
@@ -12,6 +12,7 @@ export default new AppConfig({
     providers: [
         AppProvider,
         RoutingProvider,
+        DatabaseProvider
     ],
     staticAssets: {
         '*': ['public']
