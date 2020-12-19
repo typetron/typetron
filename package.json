@@ -10,7 +10,7 @@
 	"scripts": {
 		"start": "ts-node-dev -r tsconfig-paths/register --respawn index.ts",
 		"prod": "ts-node -r tsconfig-paths/register index.ts",
-		"test": "mocha"
+		"tests": "mocha"
 	},
 	"dependencies": {
 		"@typetron/framework": "0.0.15",
