@@ -5,5 +5,8 @@ export class User extends Model {
     id: number
 
     @Field()
+    name: string
+
+    @Field()
     email: string
 }
