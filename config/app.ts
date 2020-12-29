@@ -15,6 +15,6 @@ export default new AppConfig({
         DatabaseProvider
     ],
     staticAssets: {
-        '*': ['public']
+        '': ['public']
     }
 })

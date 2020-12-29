@@ -23,7 +23,7 @@ export class AuthController {
             throw new Error('Passwords don\'t match')
         }
 
-        return UserModel.from(await this.auth.register(form.email, form.password))
+        return UserModel.from(this.auth.register(form.email, form.password))
     }
 
     @Post('login')
