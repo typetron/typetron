@@ -14,7 +14,7 @@
 		"test": "mocha"
 	},
 	"dependencies": {
-		"@typetron/framework": "0.0.20",
+		"@typetron/framework": "0.0.21",
 		"reflect-metadata": "^0.1.13",
 		"ts-node": "^9.1.1",
 		"tsconfig-paths": "^3.9.0",
