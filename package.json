@@ -17,7 +17,7 @@
 		"node": ">= 12.33.0"
 	},
 	"dependencies": {
-		"@typetron/framework": "0.0.23",
+		"@typetron/framework": "0.1.0",
 		"reflect-metadata": "^0.1.13",
 		"ts-node": "^9.1.1",
 		"tsconfig-paths": "^3.9.0",
