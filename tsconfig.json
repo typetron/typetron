@@ -6,6 +6,7 @@
 		"emitDecoratorMetadata": true,
 		"sourceMap": true,
 		"strict": true,
+		"esModuleInterop": true,
 		"strictPropertyInitialization": false,
 		"outDir": "dist",
 		"baseUrl": ".",
