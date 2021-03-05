@@ -1,11 +1,8 @@
-'use strict'
-import 'reflect-metadata'
-import 'source-map-support/register'
-import '@Typetron/Support'
-import { AppConfig, Application } from '@Typetron/Framework'
+import { appBuilder } from 'App/app'
+import { AppConfig } from '@Typetron/Framework'
 
-Application.create(__dirname).then(app => {
+appBuilder.then(app => {
     app.startServer()
     const config = app.get(AppConfig)
-    console.log(`Started server at: http://localhost:${config.port}`)
+    console.log(`Typetron app started at: http://localhost:${config.port}`)
 })

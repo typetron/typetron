@@ -11,8 +11,7 @@
 		"baseUrl": ".",
 		"moduleResolution": "node",
 		"lib": [
-			"esnext",
-			"ES2019.Array"
+			"esnext"
 		],
 		"types": [
 			"reflect-metadata"
