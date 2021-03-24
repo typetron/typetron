@@ -1,5 +1,3 @@
-/* tslint:disable:no-default-export */
-
 import { AuthConfig } from '@Typetron/Framework'
 import { User } from 'App/Entities/User'
 
