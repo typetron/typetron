@@ -4,15 +4,10 @@ import { Email, Required } from '@Typetron/Validation'
 export class LoginForm extends Form {
 
     @Field()
-    @Rules(
-        Required,
-        Email
-    )
+    @Rules(Required, Email)
     email: string
 
     @Field()
-    @Rules(
-        Required,
-    )
+    @Rules(Required)
     password: string
 }

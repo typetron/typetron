@@ -4,22 +4,14 @@ import { Email, MinLength, Required } from '@Typetron/Validation'
 export class RegisterForm extends Form {
 
     @Field()
-    @Rules(
-        Required,
-        Email,
-    )
+    @Rules(Required, Email)
     email: string
 
     @Field()
-    @Rules(
-        Required,
-        MinLength(6),
-    )
+    @Rules(Required, MinLength(6))
     password: string
 
     @Field()
-    @Rules(
-        Required
-    )
+    @Rules(Required)
     passwordConfirmation: string
 }
