@@ -1,14 +1,19 @@
 import { DatabaseConfig } from '@Typetron/Framework'
-import { SqliteDriver } from '@Typetron/Database/Drivers'
+import { MysqlDriver, SqliteDriver } from '@Typetron/Database/Drivers'
 
 export default new DatabaseConfig({
-
-    driver: new SqliteDriver('database.sqlite'),
-    // driver: new MysqlDriver({host: 'host', user: 'user', password: 'password', database: 'database'}),
-
     entities: './Entities',
-
     synchronizeSchema: true,
+    migrationsDirectory: 'migrations',
+    driver: process.env.databaseDriver ?? 'sqlite',
 
-    migrationsDirectory: 'migrations'
+    drivers: {
+        sqlite: () => new SqliteDriver(process.env.database ?? 'database.sqlite'),
+        mysql: () => new MysqlDriver({
+            host: process.env.databaseHost,
+            user: process.env.databaseUser,
+            password: process.env.databasePassword,
+            database: process.env.database,
+        }),
+    }
 })

@@ -1,19 +1,25 @@
 import { TestCase as BaseTestCase } from '@Typetron/Testing/TestCase'
-import { AppConfig, Application } from '@Typetron/Framework'
+import { Application, AuthConfig } from '@Typetron/Framework'
 import * as path from 'path'
+import { Crypt } from '@Typetron/Encryption'
+import { User } from 'App/Entities/User'
+import * as dotenv from 'dotenv'
+
+dotenv.config({path: 'test/.env'})
 
 export class TestCase extends BaseTestCase {
 
-    static app: Application
-
     async bootstrapApp() {
-        if (TestCase.app) {
-            this.app = TestCase.app
-            return
-        }
-        const app = await Application.create(path.join(__dirname, '..'))
-        const config = app.get(AppConfig)
-        console.log(`Started server at: http://localhost:${config.port}`)
-        TestCase.app = this.app = app
+        return await Application.create(path.join(__dirname, '..'))
     }
+
+    async createUser(overrides: Partial<User> = {}) {
+        return await User.create({
+            username: String.randomAlphaNum(10),
+            email: String.randomAlphaNum(10),
+            password: await Crypt.hash(String.randomAlphaNum(10), this.app.get(AuthConfig).saltRounds),
+            ...overrides
+        })
+    }
+
 }
