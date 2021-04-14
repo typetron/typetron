@@ -9,8 +9,8 @@
 	},
 	"repository": "https://github.com/typetron/typetron",
 	"scripts": {
-		"start": "ts-node-dev -r tsconfig-paths/register --respawn index.ts",
-		"prod": "ts-node -r tsconfig-paths/register index.ts",
+		"start": "ts-node-dev -r tsconfig-paths/register  -r dotenv/config --respawn index.ts",
+		"prod": "ts-node -r tsconfig-paths/register  -r dotenv/config index.ts",
 		"test": "mocha"
 	},
 	"engines": {
@@ -19,7 +19,7 @@
 	"dependencies": {
 		"@types/dotenv": "^8.2.0",
 		"dotenv": "^8.2.0",
-		"@typetron/framework": "^0.2.2",
+		"@typetron/framework": "^0.2.3",
 		"reflect-metadata": "^0.1.13",
 		"ts-node": "^9.1.1",
 		"tsconfig-paths": "^3.9.0",
