@@ -17,7 +17,7 @@ export class TestCase extends BaseTestCase {
         return await User.create({
             username: String.randomAlphaNum(10),
             email: String.randomAlphaNum(10),
-            password: await Crypt.hash(String.randomAlphaNum(10), this.app.get(AuthConfig).saltRounds),
+            password: await this.app.get(Crypt).hash(String.randomAlphaNum(10), this.app.get(AuthConfig).saltRounds),
             ...overrides
         })
     }
