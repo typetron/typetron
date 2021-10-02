@@ -44,7 +44,10 @@ _(check [the tutorials](https://typetron.org/tutorials) page on how to get start
 - Logging
 - Internationalization (i18n)
 - Monitoring
-- Notifications
+- Two-Factor Authentication (2FA)
+- OAuth
+- Views (HTML rendering)
+- HTTP3/QUIC
 - Error alerts (from the server directly on pc or phone, Slack or SMS)
 
 ### Prerequisites
