@@ -5,7 +5,7 @@ import { Crypt } from '@Typetron/Encryption'
 import { User } from 'App/Entities/User'
 import * as dotenv from 'dotenv'
 
-dotenv.config({path: 'test/.env'})
+dotenv.config({path: path.join(path.dirname(__filename), '.env')})
 
 export class TestCase extends BaseTestCase {
 
