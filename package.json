@@ -2,7 +2,7 @@
 	"name": "@typetron/typetron",
 	"description": "Modern Node.js framework for backend apps written in Typescript",
 	"license": "MIT",
-	"version": "0.3.3",
+	"version": "0.3.7",
 	"author": {
 		"email": "ionel@typetron.org",
 		"name": "Ionel Lupu"
@@ -19,7 +19,7 @@
 	"dependencies": {
 		"@types/dotenv": "^8.2.0",
 		"dotenv": "^10.0.0",
-		"@typetron/framework": "^0.3.5",
+		"@typetron/framework": "^0.3.7",
 		"reflect-metadata": "^0.1.13",
 		"ts-node": "^10.2.1",
 		"tsconfig-paths": "^3.11.0",
