@@ -4,7 +4,7 @@ import { Controller, Event } from '@Typetron/Router'
 export class MainController {
 
     @Event()
-    async welcome() {
+    welcome() {
         return 'Welcome to Websockets'
     }
 }
