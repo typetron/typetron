@@ -4,7 +4,8 @@ import { MysqlDriver, SqliteDriver } from '@Typetron/Database/Drivers'
 export default new DatabaseConfig({
     entities: './Entities',
     synchronizeSchema: true,
-    migrationsDirectory: 'migrations',
+    migrationsDirectory: 'Database/migrations',
+    seedersDirectory: 'Database/seeders',
     driver: process.env.DATABASE_DRIVER ?? 'sqlite',
 
     drivers: {
