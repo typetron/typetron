@@ -20,7 +20,7 @@
 	"dependencies": {
 		"@types/dotenv": "^8.2.0",
 		"dotenv": "^10.0.0",
-		"@typetron/framework": "^0.3.9",
+		"@typetron/framework": "^0.3.10",
 		"reflect-metadata": "^0.1.13",
 		"ts-node": "^10.4.0",
 		"tsconfig-paths": "^3.12.0",
