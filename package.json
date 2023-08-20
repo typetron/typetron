@@ -18,7 +18,7 @@
 		"node": ">= 12.33.0"
 	},
 	"dependencies": {
-		"@typetron/framework": "^0.3.16",
+		"@typetron/framework": "^0.3.18",
 		"dotenv": "^10.0.0",
 		"reflect-metadata": "^0.1.13"
 	},
