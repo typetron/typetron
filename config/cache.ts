@@ -1,7 +1,7 @@
 import { CacheConfig } from '@Typetron/Framework'
 
 export default new CacheConfig({
-    defaultStore: 'file',
+    default: 'file',
 
     drivers: {
         file: {

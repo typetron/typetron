@@ -1,7 +1,8 @@
-dist
+build
 node_modules
 .idea
 .nyc_output
+.clinic
 coverage
 .env
 .env.tests
