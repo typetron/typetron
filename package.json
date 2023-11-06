@@ -18,7 +18,7 @@
 		"node": ">= 12.33.0"
 	},
 	"dependencies": {
-		"@typetron/framework": "^0.4.0-rc3",
+		"@typetron/framework": "^0.4.0-rc13",
 		"dotenv": "^10.0.0",
 		"reflect-metadata": "^0.1.13"
 	},
@@ -34,6 +34,7 @@
 		"chai": "^4.3.6",
 		"eslint": "^8.14.0",
 		"mocha": "^9.2.2",
+		"ts-mockito": "^2.6.1",
 		"nyc": "^15.1.0",
 		"source-map-support": "^0.5.21",
 		"ts-node": "^10.7.0",

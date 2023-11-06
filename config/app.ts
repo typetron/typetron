@@ -4,7 +4,7 @@ import { AppProvider } from 'App/Providers/AppProvider'
 
 export default new AppConfig({
     port: 3000,
-    websocketsPort: 8001,
+    websocketsPort: 3001,
     environment: 'development',
     middleware: [
         // CorsMiddleware
