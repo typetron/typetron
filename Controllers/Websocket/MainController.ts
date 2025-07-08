@@ -1,9 +1,9 @@
-import { Controller, Event } from '@Typetron/Router'
+import { Controller, Action } from '@Typetron/Router'
 
 @Controller()
 export class MainController {
 
-    @Event()
+    @Action()
     welcome() {
         return 'Welcome to Websockets'
     }
