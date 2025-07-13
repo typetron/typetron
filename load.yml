@@ -1,0 +1,18 @@
+config:
+    target: "ws://localhost:3001"
+    phases:
+        - duration: 60  # Test for X seconds
+          arrivalRate: 100 # Every second, add X users
+          rampTo: 500 # And ramp it up to X users in total over the Xs period
+          name: "Ramping up the load"
+#        - duration: 1200 # Then resume the load test for 120s
+#          arrivalRate: 1000 # With those 100 users we ramped up to in the first phase
+#          rampTo: 10000 # And keep it steady at 100 users
+#          name: "Pushing a constant load"
+scenarios:
+    - engine: "ws"
+      flow:
+          - loop:
+             - send: '{"action":"welcome"}'  # Subscribe to the public channel
+             - think: 5 # Every connection will remain open for Xs
+#            count: 100

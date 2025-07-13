@@ -2,7 +2,7 @@
 	"name": "@typetron/typetron",
 	"description": "Modern Node.js framework for backend apps written in Typescript",
 	"license": "MIT",
-	"version": "0.4.0-rc13",
+	"version": "0.4.0-rc14",
 	"author": {
 		"email": "ionel@typetron.org",
 		"name": "Ionel Lupu"
@@ -18,28 +18,28 @@
 		"node": ">= 12.33.0"
 	},
 	"dependencies": {
-		"@typetron/framework": "^0.4.0-rc13",
-		"dotenv": "^10.0.0",
-		"reflect-metadata": "^0.1.13"
+		"@typetron/framework": "^0.5.0-rc1",
+		"dotenv": "^17.1.0",
+		"reflect-metadata": "^0.2.2"
 	},
 	"devDependencies": {
-		"@testdeck/mocha": "^0.1.2",
-		"@types/chai": "^4.3.1",
-		"@types/dotenv": "^8.2.0",
-		"@types/mocha": "^9.1.1",
-		"@types/node": "^16.11.31",
-		"@types/source-map-support": "^0.5.7",
-		"@typescript-eslint/eslint-plugin": "^5.21.0",
-		"@typescript-eslint/parser": "^5.21.0",
-		"chai": "^4.3.6",
-		"eslint": "^8.14.0",
-		"mocha": "^9.2.2",
-		"ts-mockito": "^2.6.1",
-		"nyc": "^15.1.0",
+		"@eslint/js": "^9.30.1",
+		"@testdeck/mocha": "^0.3.3",
+		"@types/chai": "^4.3.20",
+		"@types/dotenv": "^8.2.3",
+		"@types/mocha": "^10.0.10",
+		"@types/node": "^24.0.11",
+		"@types/source-map-support": "^0.5.10",
+		"chai": "^4.5.0",
+		"eslint": "^9.30.1",
+		"mocha": "^11.7.1",
+		"nyc": "^17.1.0",
 		"source-map-support": "^0.5.21",
-		"ts-node": "^10.7.0",
-		"ts-node-dev": "^1.1.8",
-		"tsconfig-paths": "^4.1.2",
-		"typescript": "4.1.3"
+		"ts-mockito": "^2.6.1",
+		"ts-node": "^10.9.2",
+		"ts-node-dev": "^2.0.0",
+		"tsconfig-paths": "^4.2.0",
+		"typescript": "5.8.3",
+		"typescript-eslint": "^8.36.0"
 	}
 }
