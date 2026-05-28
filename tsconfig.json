@@ -23,7 +23,7 @@
 				"*"
 			],
 			"@Typetron/*": [
-				"node_modules/@typetron/framework/*"
+				"node_modules/@typetron/framework/build/*"
 			]
 		}
 	},
@@ -35,4 +35,3 @@
 		"node_modules"
 	]
 }
-

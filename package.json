@@ -9,16 +9,18 @@
 	},
 	"repository": "https://github.com/typetron/typetron",
 	"scripts": {
-		"start": "ts-node-dev -r tsconfig-paths/register -r dotenv/config --respawn index.ts",
-		"prod": "ts-node -r tsconfig-paths/register -r dotenv/config index.ts",
+		"start": "SWC_NODE_PROJECT=./tsconfig.json node --watch -r @swc-node/register -r tsconfig-paths/register -r dotenv/config index.ts",
+		"prod": "SWC_NODE_PROJECT=./tsconfig.json node -r @swc-node/register -r tsconfig-paths/register -r dotenv/config index.ts",
 		"lint": "eslint .",
-		"test": "mocha"
+		"test": "NODE_PATH=./node_modules SWC_NODE_PROJECT=./tsconfig.json mocha"
 	},
 	"engines": {
 		"node": ">= 12.33.0"
 	},
 	"dependencies": {
-		"@typetron/framework": "^0.5.0-rc1",
+		"@swc-node/register": "^1.11.1",
+		"@swc/core": "^1.13.5",
+		"@typetron/framework": "^0.5.26",
 		"dotenv": "^17.1.0",
 		"reflect-metadata": "^0.2.2"
 	},
@@ -36,8 +38,6 @@
 		"nyc": "^17.1.0",
 		"source-map-support": "^0.5.21",
 		"ts-mockito": "^2.6.1",
-		"ts-node": "^10.9.2",
-		"ts-node-dev": "^2.0.0",
 		"tsconfig-paths": "^4.2.0",
 		"typescript": "5.8.3",
 		"typescript-eslint": "^8.36.0"

@@ -3,11 +3,11 @@
 		"ts"
 	],
 	"require": [
-		"ts-node/register",
+		"@swc-node/register",
 		"tsconfig-paths/register",
 		"source-map-support/register",
 		"reflect-metadata",
-		"@typetron/framework/Support"
+		"./node_modules/@typetron/framework/build/Support"
 	],
 	"spec": "tests/**/*Test.ts"
 }
