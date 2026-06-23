@@ -20,7 +20,7 @@
 	"dependencies": {
 		"@swc-node/register": "^1.11.1",
 		"@swc/core": "^1.13.5",
-		"@typetron/framework": "^0.5.26",
+		"@typetron/framework": "^0.5.28",
 		"dotenv": "^17.1.0",
 		"reflect-metadata": "^0.2.2"
 	},
