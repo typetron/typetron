@@ -1,4 +1,5 @@
 import { AppConfig, CacheProvider, DatabaseProvider, MailProvider } from '@Typetron/Framework'
+import { CorsMiddleware } from '@Typetron/Framework/Middleware'
 import { RoutingProvider } from 'App/Providers/RoutingProvider'
 import { AppProvider } from 'App/Providers/AppProvider'
 
@@ -8,7 +9,7 @@ export default new AppConfig({
     server: 'uNetworking',
     environment: 'development',
     middleware: {
-        global: [],
+        global: [CorsMiddleware],
         http: [],
         websocket: []
     },
