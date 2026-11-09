@@ -2,27 +2,30 @@
 	"name": "@typetron/typetron",
 	"description": "Modern Node.js framework for backend apps written in Typescript",
 	"license": "MIT",
-	"version": "0.5.31",
+	"version": "0.5.45",
 	"author": {
 		"email": "ionel@typetron.org",
 		"name": "Ionel Lupu"
 	},
 	"repository": "https://github.com/typetron/typetron",
 	"scripts": {
-		"start": "SWC_NODE_PROJECT=./tsconfig.json node --watch -r @swc-node/register -r tsconfig-paths/register -r dotenv/config index.ts",
-		"prod": "SWC_NODE_PROJECT=./tsconfig.json node -r @swc-node/register -r tsconfig-paths/register -r dotenv/config index.ts",
+		"start": "node --watch --enable-source-maps -r @swc-node/register -r tsconfig-paths/register -r dotenv/config index.ts",
+		"build": "node -e \"fs.existsSync('build') && fs.readdirSync('build').forEach(file => fs.rmSync('build/' + file, {recursive: true}))\" && swc . -d build --ignore \"node_modules/**,build/**,tests/**,eslint.config.*\"",
+		"prod": "node --enable-source-maps -r tsconfig-paths/register -r dotenv/config build/index.js",
 		"lint": "eslint .",
-		"test": "NODE_PATH=./node_modules SWC_NODE_PROJECT=./tsconfig.json mocha"
+		"test": "mocha"
 	},
 	"engines": {
 		"node": ">= 12.33.0"
 	},
 	"dependencies": {
 		"@swc-node/register": "^1.11.1",
+		"@swc/cli": "^0.8.2",
 		"@swc/core": "^1.13.5",
-		"@typetron/framework": "~0.5.33",
+		"@typetron/framework": "~0.5.46",
 		"dotenv": "^17.1.0",
-		"reflect-metadata": "^0.2.2"
+		"reflect-metadata": "^0.2.2",
+		"tsconfig-paths": "^4.2.0"
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.30.1",
@@ -31,14 +34,12 @@
 		"@types/dotenv": "^8.2.3",
 		"@types/mocha": "^10.0.10",
 		"@types/node": "^24.0.11",
-		"@types/source-map-support": "^0.5.10",
 		"chai": "^4.5.0",
 		"eslint": "^9.30.1",
 		"mocha": "^11.7.1",
 		"nyc": "^17.1.0",
 		"source-map-support": "^0.5.21",
 		"ts-mockito": "^2.6.1",
-		"tsconfig-paths": "^4.2.0",
 		"typescript": "5.8.3",
 		"typescript-eslint": "^8.36.0"
 	}

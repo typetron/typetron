@@ -9,8 +9,8 @@ export default new AppConfig({
     server: 'uNetworking',
     environment: 'development',
     middleware: {
-        global: [CorsMiddleware],
-        http: [],
+        global: [],
+        http: [CorsMiddleware],
         websocket: []
     },
     providers: [

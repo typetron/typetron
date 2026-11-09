@@ -8,10 +8,16 @@
 			"legacyDecorator": true,
 			"decoratorMetadata": true
 		},
-		"target": "es2020"
+		"target": "es2020",
+		"baseUrl": "./",
+		"paths": {
+			"App/*": [
+				"./*"
+			]
+		}
 	},
 	"module": {
 		"type": "commonjs"
 	},
-	"sourceMaps": "inline"
+	"sourceMaps": true
 }
