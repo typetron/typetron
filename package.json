@@ -10,7 +10,7 @@
 	"repository": "https://github.com/typetron/typetron",
 	"scripts": {
 		"start": "node --watch --enable-source-maps -r @swc-node/register -r tsconfig-paths/register -r dotenv/config index.ts",
-		"build": "node -e \"fs.existsSync('build') && fs.readdirSync('build').forEach(file => fs.rmSync('build/' + file, {recursive: true}))\" && swc . -d build --ignore \"node_modules/**,build/**,tests/**,eslint.config.*\"",
+		"build": "node -e \"fs.existsSync('build') && fs.readdirSync('build').forEach(file => fs.rmSync('build/' + file, {recursive: true}))\" && swc . -d build --copy-files --ignore \"node_modules/**,build/**,tests/**,public/**,storage/**,**/*.sqlite,eslint.config.*\"",
 		"prod": "node --enable-source-maps -r tsconfig-paths/register -r dotenv/config build/index.js",
 		"lint": "eslint .",
 		"test": "mocha"
